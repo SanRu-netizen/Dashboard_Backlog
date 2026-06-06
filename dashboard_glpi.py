@@ -294,8 +294,9 @@ if archivo:
             # Gráfico de barras por tipo de falla (etiqueta corta, siempre 6 tipos)
             fig2 = px.bar(
                 df_fallas_completo,
-                x='Falla',
-                y='Cantidad',
+                x='Cantidad',
+                y='Falla',
+                orientation='h',
                 title='Casos de Transcripción por Tipo de Falla',
                 color='Falla',
                 color_discrete_sequence=px.colors.qualitative.Pastel,
